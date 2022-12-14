@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: pink;
+}
+.Logo {
+    width: 10%;
+    padding-left: 10%;
+}
+header h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2cm;
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.links{
+    text-align: center;
+}
+.apps{
+    text-align: right;
+}
+.ubi{
+    width: 10cm;
+    height: 10cm;
+}
+.clock{
+    text-align: center;
+}
+.apps2{
+    text-align: right;
+}
+.Local{
+    width: 15cm;
+    height: 10cm;
+}
+.personal{
+    width: 15cm;
+    height: 10cm;
+}

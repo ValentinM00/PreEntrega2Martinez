@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado{
+    height: 80px;
+    width: 100%;
+    background-color:  rgb(254, 171, 185);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-shadow: 0 0 5px black;
+    padding: 30px;
+    border-bottom: 5px solid black;
+    box-shadow: inset 0 0 10px black;
+}
+main{
+    height: 600px;
+    width: 100%;
+    background-color: #000;
+    background-image: url(./Multimedia/Local\ \(afuera\).jpeg);
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.call{
+    color: rgb(254, 171, 185);
+    width: 60%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    float: right;
+    margin: 40px
+}
+.call p{
+    margin-bottom: 20px;
+}
+.call a{
+    background-color: rgb(254, 171, 185);
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.call a:hover{
+    background-color: #000;
+    color: rgb(254, 171, 185);
+    border: 2px dashed rgb(254, 171, 185);
+}
+.logo{
+    display: flex;
+}
+.lleft{
+    height: 450px;
+    width: 50%;
+    background-color: #000;
+    background-image: url(./Multimedia/Logo\ Merceria\ Terciopelo\ 3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.lright{
+    height: 450px;
+    width: 50%;
+    padding: 20px;
+}
+.lright h3{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.lright p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+color: white;
+}
+h2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(254, 171, 185);
+    color: white;
+    text-shadow: 0 0 5px #000;
+    font-size: 28px;
+    padding: 10px;
+}
+.galeria{
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 175, 188);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+}
+.item{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+.item:hover{
+    transition: all 0.8s; 
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+.item1{
+    background-image: url(./Multimedia/Lino1.jpg);
+}
+.item2{
+    background-image: url(./Multimedia/jeans-1161035_1920.jpg);
+}
+.item3{
+    background-image: url(./Multimedia/material-540136_1920.jpg);
+}
+.item4{
+    background-image: url(./Multimedia/Seda1.jpg);
+}
+.item5{
+    background-image: url(./Multimedia/Seda3.jpg);
+}
+.item6{
+    background-image: url(./Multimedia/Algodon3.jpg);
+}
+.item7{
+    background-image: url(./Multimedia/Algodon2.jpg);
+}
+.item8{
+    background-image: url(./Multimedia/Algodon1.jpg);
+}
+
+@media only screen and (min-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4{
+        grid-column: 2/4;
+    }
+    .item5{
+        grid-column: 1/3;
+    }
+    .item6{
+        grid-column: 3/4;
+    }
+    .item8{
+        grid-column: 2/4;
+    }
+}
+
+footer{background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 15px;
+}
+footer i{
+    font-size: 50px;
+    color: rgb(255, 175, 188);
+    letter-spacing: 20px;
+}
+@media only screen and (min-width: 1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+}
