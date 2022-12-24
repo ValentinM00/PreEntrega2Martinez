@@ -1,19 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <!-- Font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+     <!-- CSS -->
     <link rel="stylesheet" href="telas.css">
     <title>Merceria Terciopelo</title>
 </head>
+<!-- Esta pagina es para sobre nosotros (obviamente con mas cambios) pero me confundi y lo puse aca, luego voy a cambiarlos :) -->
 <body>
     <header class="encabezado">
-        <div class="logo">Merceria Terciopelo</div>
+        <header class="encabezado">
+            <div class="logo"></div>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand"><img src="./Multimedia/Logo Merceria Terciopelo.jpeg" alt="Logo de la Merceria"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="./telas.html">Telas</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <!-- dropdown-toggle data-toggle="dropdown" aria-expanded="false" saque este codigo pero lo guardo para mas adelante -->
+                          <a class="nav-link" href="./articulosdecostura.html" role="button">Art.de costura</a>
+                          <!-- <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>  todo esto me va servir para mas adelante-->
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="./respuestostextiles.html">Rep.textiles</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+                          </li>
+                      </ul>
+                      <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>  tambien sera util para mas adelante-->
+                    </div>
+                  </nav>
+        <!-- <div class="logo">Merceria Terciopelo</div>
         <div class="menu">
             <i class="fa-solid fa-bars"></i>           
-        </div>
+        </div>  no borro esto porque pienso cambiar el nav mas adelante y no hacerlo con bootstrap-->
     </header>
     <main>
         <div class="call">
@@ -22,14 +66,21 @@
         <a href="#">Mas info</a>
         </div>
     </main>
-    <h2>Logo</h2>
-    <section class="logo">
-        <div class="lleft"></div>
-        <div class="lright">
-        <h3>direccion</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio in blanditiis asperiores, laboriosam repellendus rerum reiciendis quasi libero veniam explicabo.</p></div>
+    <h2>Info</h2>
+    <section class="info">
+        <div class="lleft"><img src="./Multimedia/Logo Merceria Terciopelo 3.jpeg" alt=""></div>
+        <!-- <div class="lright">
+        <h3>Direccion</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio in blanditiis asperiores, laboriosam repellendus rerum reiciendis quasi libero veniam explicabo.</p>
+        <br><br>
+        <h3>Nuestro personal</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel suscipit aliquid obcaecati omnis molestias ipsa quidem minus impedit unde nesciunt ut nam velit, quo nulla expedita. Ipsam, delectus fuga.</p>
+        <br><br>
+        <h3>Sobre mi</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa provident sapiente nostrum velit nulla non voluptate repellendus. Fugit distinctio vel doloremque ab iste earum sapiente ipsum, mollitia sunt accusantium perspiciatis nisi illo voluptatem sequi.</p>
+    </div> -->
     </section>
-    <h2>Galeria de telas</h2>
+    <h2>Nuestros articulos mas vendidos</h2>
     <div class="galeria">
         <div class="item item1"></div>
         <div class="item item2"></div>
@@ -42,7 +93,7 @@
     </div>
     <footer>
         <p>todos los derechos reservados por copyright</p>
-        <p>el sitio fue desarrollado por coderhouse</p>
+        <p>el sitio fue desarrollado por Valentin Martinez</p>
         <div class="redes">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -50,5 +101,10 @@
             <i class="fa-solid fa-address-book"></i>
         </div>
     </footer>
+    <!-- JS -->
+   <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+   <!-- <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script> -->
 </body>
 </html>
+
+<!-- no evolucione el resto de paginas porque en la consugna solo decia dos a los mejor lo malinterprete pero por eso solo mejore dos -->

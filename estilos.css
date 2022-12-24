@@ -4,55 +4,94 @@
     box-sizing: border-box;
 }
 
+.navbar-brand img{
+    width: 65px;
+}
+header nav ul li a:hover {
+    color: rgb(252, 83, 221) !important;
+}
 .encabezado{
-    background-color: rgb(227, 69, 198);
+    height: 80px;
+    width: 100%;
     font-size: 22px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    height: 80px;
-    padding: 20px;
-    box-shadow: inset 0 0 5px white;
+    /* background-color: rgb(227, 69, 198); */
+    /* color: white; */
+    /* padding: 20px; */
+    /* box-shadow: inset 0 0 5px white; */
 }
-.encabezado ul li{
-    list-style: none;
-    display: inline-block;
-}
-.encabezado ul li a{
-    text-decoration: none;
-    color: white;
-}
-.logo{
-    float: left;
-    font-weight: bold;
-    text-shadow: 0 0 5px white;
-}
-.barra{
-    float: right;
-}
-.encabezado li a:hover{
-    color: black;
-}
-main{
-    height: 100vh;
+.slider{
     width: 100%;
-    background-image: url(./Multimedia/WhatsApp\ Image\ 2022-12-06\ at\ 10.15.20.jpeg);
-    background-size: cover;
+    height: 600px;
+    overflow: hidden;
 }
-.call{
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+.cuadro1{
     color: white;
-    width: 50%;
-    float: right;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.744);
     border: 4px solid rgb(227, 69, 198);
     padding: 25px;
     margin: 40px;
-    box-shadow: inset 0 0 5px  rgba(255, 255, 255, 0.7);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: inset 0 0 5px  rgba(255, 255, 255, 0.913);
+    font-family: 'Times New Roman', Times, serif;
 }
 h1{
+    width: 100%;
     color:  rgb(227, 69, 198);
     margin-bottom: 20px;
 }
-.call p{
+.cuadro p{
+    width: 70%;
     margin-bottom: 20px;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 15px;
+    width: 100%;
+}
+footer i{
+    font-size: 50px;
+    color: rgb(255, 175, 188);
+    letter-spacing: 20px;
+}
+@media only screen and (max-width:800px){
+    .cuadro1{
+        height: 100%;
+        width: 100%;
+    }
 }

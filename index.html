@@ -1,30 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="estilos.css">
     <title>Merceria Terciopelo</title>
 </head>
 <body>
+  <div class="contenedor">
+    <!-- Inicio Nav -->
    <header class="encabezado">
-    <div class="logo">Merceria Terciopelo</div>
-    <nav class="barra">
-        <ul>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand"><img src="./Multimedia/Logo Merceria Terciopelo.jpeg" alt="Logo de la Merceria"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./telas.html">Telas</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <!-- dropdown-toggle data-toggle="dropdown" aria-expanded="false" saque este codigo pero lo guardo para mas adelante -->
+                  <a class="nav-link" href="./articulosdecostura.html" role="button">Art.de costura</a>
+                  <!-- <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>  todo esto me va servir para mas adelante-->
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./respuestostextiles.html">Rep.textiles</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+                  </li>
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>  tambien sera util para mas adelante-->
+            </div>
+          </nav>
+        <!-- <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="./telas.html">Telas</a></li>
             <li><a href="./articulosdecostura.html">Articulos de costura</a></li>
             <li><a href="./respuestostextiles.html">Respuestos textiles</a></li>
             <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-        </ul>
-    </nav>
-   </header>
-   <main>
-    <div class="call"><h1>Tu mejor eleccion</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, placeat? In, totam illum harum, placeat vel voluptate delectus accusantium ea mollitia veritatis quidem incidunt distinctio!</p>
-    </div>
-   </main>
+        </ul> -->
+    </header>
+                    <!-- Fin Nav -->
+    <main>
+                    <!-- Inicio del carrusel   puse este carrusel porque el de bootstrap no se movia la slice y no lo pude arreglar luego de la entrega volvere a hacerlo-->
+      <section class="section1"><div class="slider">
+            <ul>
+              <li>
+                <img src="Multimedia/material-540136_1920.jpg" alt="">
+              </li>
+
+              <li>
+                <img src="Multimedia/jeans-1161035_1920.jpg" alt="">
+              </li>
+
+              <li>
+                <img src="Multimedia/textile-2072568_1920.jpg" alt="">
+              </li>
+              <li>
+                <img src="Multimedia/towel-1838210_960_720.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+      </section>
+                    <!-- Fin del carrusel -->
+      <section class="section2">
+        <div class="cuadro1"><h1>Tu mejor eleccion</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatibus nam repellat sit maxime qui vel inventore? Recusandae consequatur adipisci minima unde mollitia error, assumenda, ratione ullam deleniti, magni deserunt velit nisi expedita libero illum ad dolor cumque cum minus vitae cupiditate? Unde iure harum cum necessitatibus dolor dolores, ullam distinctio delectus recusandae. Quaerat, fugit! Molestiae maiores praesentium quasi saepe?</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>todos los derechos reservados por copyright</p>
+        <p>el sitio fue desarrollado por Valentin Martinez</p>
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-solid fa-address-book"></i>
+        </div>
+    </footer>
+   <!-- JS -->
+   <script src="bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+   <!-- <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script> -->
+  </div>
 </body>
 </html>
