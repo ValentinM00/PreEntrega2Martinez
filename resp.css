@@ -1,27 +1,22 @@
 *{
     padding: 0%;
     margin: 0%;
-    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
-.Logo {
-    width: 10%;
-    padding-left: 10%;
+.navbar-brand img{
+    width: 80px;
 }
-header h1{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 2cm;
+header nav ul li a:hover {
+    color: rgb(252, 83, 221) !important;
 }
-.header ul li a{
-    text-decoration: none;
-    color: white;
+.encabezado{
+    height: 95px;
     font-size: 22px;
+    width: 100%;
 }
-.links{
-    text-align: center;
-}
-.apps{
-    text-align: right;
+main{
+    background-color: pink;
 }
 .ubi{
     width: 10cm;
@@ -44,4 +39,18 @@ header h1{
 .carrusel3{
     width: 10cm;
     height: 10cm;
+}
+footer{background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 15px;
+}
+footer i{
+    font-size: 50px;
+    color: rgb(255, 175, 188);
+    letter-spacing: 20px;
 }

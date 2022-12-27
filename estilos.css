@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    /* background-color: pink; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navbar-brand img{
@@ -14,7 +16,6 @@ header nav ul li a:hover {
     height: 80px;
     width: 100%;
     font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     /* background-color: rgb(227, 69, 198); */
     /* color: white; */
     /* padding: 20px; */
@@ -60,7 +61,6 @@ header nav ul li a:hover {
     padding: 25px;
     margin: 40px;
     box-shadow: inset 0 0 5px  rgba(255, 255, 255, 0.913);
-    font-family: 'Times New Roman', Times, serif;
 }
 h1{
     width: 100%;
@@ -71,12 +71,14 @@ h1{
     width: 70%;
     margin-bottom: 20px;
 }
+/* main{
+    background-color: pink;
+} */
 footer{
     width: 100%;
     background-color: black;
     color: white;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
     font-size: 30px;
     padding: 20px;
 }
